@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk as build
 WORKDIR /app
 
 # Copiar o projeto completo para o container
-COPY . /app
+COPY .. /app
 
 # Empacotar a aplicação (gera o jar)
 RUN ./mvnw clean package -DskipTests
